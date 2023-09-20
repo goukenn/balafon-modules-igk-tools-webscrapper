@@ -2,7 +2,7 @@
 
 @C.A.D.BONDJEDOUE
 
-Module qui sert à récupperer un site internet.
+Balafon's module use to get web content.
 
 ```
 balafon --tools:webscrap url [--controller:controller_name]
