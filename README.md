@@ -4,11 +4,13 @@
 
 Balafon's module use to get web content.
 
+usage with BALAFON CLI.
+
 ```
-balafon --tools:webscrap url [--controller:controller_name]
+balafon --tools:webscrap url [--controller:controller_name] [options]
 ```
 
-Usage 
+Usage in Script
 - create a WebScapperDocument
 - parse html content 
 - export to the output folder 
