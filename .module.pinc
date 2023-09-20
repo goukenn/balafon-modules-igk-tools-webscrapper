@@ -1,8 +1,8 @@
 <?php
 // @author: C.A.D. BONDJE DOUE
-// @file: %modules%/igk/tools/webscapper/.module.pinc.php
+// @file: %modules%/igk/tools/webscrapper/.module.pinc.php
 // @date: 20230914 12:43:10
-namespace igk\tools\webscapper;
+namespace igk\tools\webscrapper;
 
 
 // + | ------------------------------------------------
@@ -17,7 +17,7 @@ return [
 //------------------------------------------------
 // define entry name space
 //
-"entry_NS"=>\igk\tools\webscapper::class,
+"entry_NS"=>\igk\tools\webscrapper::class,
 
 //------------------------------------------------
 // version
