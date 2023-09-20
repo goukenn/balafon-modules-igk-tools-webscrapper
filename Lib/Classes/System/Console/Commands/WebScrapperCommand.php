@@ -20,17 +20,19 @@ class WebScrapperCommand extends AppExecCommand{
 	var $desc="webscrapper web site";
 	var $category="tools";
 	var $options=[
-
+		'--controller'
 	];
-	var $usage='';
+	var $usage='url --controller: [options]';
 	public function exec($command,?string $url=null) { 
 		empty($url) && igk_die('required URL');
 		if (!IGKValidator::IsUri($url)){
 			igk_die('not a valid url');
 		}
+		$ctrl = ($ctrl = igk_getv($command->options, '--controller')) ? self::GetController($ctrl) : null;
 		$client = new CurlHttpClient;
 		$client->accept = 'text/html';
 		$client->followLocation = true;
+		$client->controller = $ctrl;
 		igk_set_timeout(0);
 		if ($content = $client->request($url)){
 			return self::ScrapContent($command, $url, $content);
